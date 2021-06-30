@@ -3,6 +3,7 @@
 
 	<h2><%= @article.body %></h2>
 	<%= link_to "Edit article", edit_article_path(@article) %>
+	<%= link_to "Delete article", article_path(@article), method: :delete, data: { confirm: "Are you sure?" }  %>
 
 
 </div>
